@@ -113,7 +113,9 @@ LOCAL_CFLAGS += -mllvm -irobf-indbr -mllvm -level-indbr=2 -mllvm -irobf-icall -m
 ```
 ### 4. 函数注释
 `+indbr`表示开启混淆
+
 `-indbr`表示关闭混淆
+
 `^indbr=3`表示混淆层级设置为3
 ```
 __attribute__((annotate("+indbr ^indbr=3 -icall ^indgv=2")))
